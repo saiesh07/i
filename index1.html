@@ -9,13 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,900;1,300;1,500;1,600;1,700&display=swap"
 rel="stylesheet">
-    <title>MOBILE FUEL </title>
+<script src="https://kit.fontawesome.com/34c07979e3.js" crossorigin="anonymous"></script>
+ <title>MOBILE FUEL </title>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index1.html"><img src="https://saiesh07.github.io/i/logow.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">FUEL</a></li>
@@ -24,6 +26,7 @@ rel="stylesheet">
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
 <div class="text-box">
     <h1>QUALITIES NO.1 CHOICE</h1>
@@ -33,6 +36,37 @@ rel="stylesheet">
     </P>
     <a href="https://saiesh07.github.io/i/index.html" class="hero-btn">REGISTER/SIGNUP NOW TO  KNOW MORE</a>
 </div>
+
+    </section>
+    <!-------------TODAYS DEALS---------------->
+    <section class="deals">
+        <h1>SERCICES WE PROVIDE</h1>
+        <P>PETROL,DIESEL,ELECTRICAL</P>
+    </section>
+
+
+
+
+
+
+
+    <!-----------javascript for Toogle menu-------------->
+    <script>
+         var navLinks = document.getElementById("navLinks")
+         
+        function showMenu(){
+            navLinks.style.right ="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+                        
+        }
+         </script>
+
+
+</body>
+</html>
 
     </section>
 </body>
